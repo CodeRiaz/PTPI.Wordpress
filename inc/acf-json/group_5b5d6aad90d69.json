@@ -1,0 +1,152 @@
+{
+    "key": "group_5b5d6aad90d69",
+    "title": "Banner",
+    "fields": [
+        {
+            "key": "field_5b5d6aad93167",
+            "label": "Banner Type",
+            "name": "banner_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Image",
+                "video": "Video"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "image",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5b5d6d93321a3",
+            "label": "CSS Classes",
+            "name": "banner_css_classes",
+            "type": "text",
+            "instructions": "Ignore this if you don't know what this is :)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b5d6aad93181",
+            "label": "Banner Image",
+            "name": "banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b5d6aad93167",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b5d6aad931a6",
+            "label": "Banner Video URL",
+            "name": "banner_video",
+            "type": "url",
+            "instructions": "Supported video formats: Youtube, Vimeo and self hosted (HTML5)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b5d6aad93167",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b73f360671ce",
+            "label": "Autoplay",
+            "name": "autoplay",
+            "type": "true_false",
+            "instructions": "Note that autoplay may not work on all video types and devices.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b5d6aad93167",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Autoplay video?",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-composer.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1535719195
+}

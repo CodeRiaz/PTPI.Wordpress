@@ -1,0 +1,23 @@
+.banner {
+    height: 600px;
+    overflow: hidden;
+    @include mobile {
+        height: auto;
+    }
+    img {
+        width: 100%;
+        vertical-align: bottom;
+        max-height: 100vh;
+        min-height: 100%;
+        @include mobile {
+            height: 100%;
+            min-height: 400px;
+        }
+    }
+
+    .object-container {
+        iframe, img, video {
+            pointer-events: none;
+        }
+    }
+}

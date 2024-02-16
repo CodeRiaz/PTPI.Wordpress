@@ -1,0 +1,24 @@
+/*
+Theme Name: PTPI
+Theme URI:
+Author: Asif Majeed
+Author URI: http://asifmajeed.com
+Description: Custom theme for PTPI.org
+Version: 1.0.0
+Text Domain: ptpi
+*/
+.chapter--single-content .row {
+    justify-content: center;
+}
+
+.chapter--single-content .chapter-description {
+    width: 620px;
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+    .chapter--single-content .chapter-description {
+        width: 100%;
+        margin-right: 0;
+    }
+}

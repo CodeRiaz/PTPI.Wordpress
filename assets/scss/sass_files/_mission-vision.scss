@@ -1,0 +1,61 @@
+.mission-vision {
+    background: url(../images/mission-bg.png) right center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__thumbnail {
+        img {
+            width: 100%;
+            max-height: 330px;
+            vertical-align: top;
+        }
+    }
+    &__description {
+        padding: 20px;
+    }
+    &__inner {
+        background: rgba(255, 255, 255, .7);
+        width: 100%;
+        padding: 10px 30px;
+        border-radius: 30px;
+        text-align: center;
+        &.history__text {
+            padding: 37px 30px;
+            .title  {
+                margin-bottom: 0;
+                line-height: 72px;
+            }
+        }
+        @include mobile {
+            padding: 10px;
+        }
+        .title {
+            font-size: 48px;
+            color: #1e3a76;
+            font-weight: bold;
+            margin: 0 0 16px 0;
+            line-height: 1;
+            font-family: $body-secondary-font;
+            @include tablet {
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+        }
+        .copy {
+            font-size: 18px;
+            line-height: 20px;
+            color: #000000;
+            margin: 0 0 20px 0;
+            font-weight: bold;
+            font-family: $body-secondary-font;
+            padding: 0 15px;
+            @include tablet {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

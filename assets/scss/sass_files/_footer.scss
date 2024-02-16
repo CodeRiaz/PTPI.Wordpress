@@ -1,0 +1,102 @@
+.footer {
+    background: #423f40;
+    padding: 35px;
+    @include tablet {
+        padding: 15px;
+    }
+    .flex {
+        align-items: flex-start;
+    }
+    &__address {
+        padding-right: 20px;
+    }
+    &__detail {
+        padding-right: 20px;
+        @include mobile {
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__form  {
+        p {
+            margin-bottom: 10px !important;
+            // padding-left: 10px;
+        }
+        input[type="text"],input[type="email"],input[type="password"],textarea{
+            width: 100%;
+            background: transparent;
+            border:1px solid #c5c3c4;
+            margin-bottom: 14px;
+            padding: 15px;
+            line-height: 1;
+            box-sizing: border-box;
+            outline: none;
+            color:#c5c3c4;
+        }
+        textarea {
+            min-height: 80px;
+            resize: none;
+        }
+        .submit-btn {
+            background: transparent;
+            border:1px solid #c5c3c4;
+            margin-bottom: 14px;
+            padding: 13px 15px;
+            line-height: 1;
+            box-sizing: border-box;
+            outline: none;
+            margin-top: 15px;
+            color:#c5c3c4;
+            cursor: pointer;
+            transition: all ease 0.4s;  
+            &:hover {
+                background: #fff;
+                color: #423f40;
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        color: #ffffff; 
+        @include tablet {
+            font-size: 12px;
+        }
+        a {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: #ffffff;
+            margin: 0;
+            text-decoration: none;
+            @include tablet {
+                font-size: 12px;
+                word-break: break-all;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    &__map {
+        position: relative;
+        .overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 9;
+            background: rgba(30, 58, 118, .8);
+        }
+    }
+}
+ 

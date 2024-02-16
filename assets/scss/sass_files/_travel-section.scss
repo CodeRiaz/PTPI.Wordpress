@@ -1,0 +1,556 @@
+.travel-detail {
+    .thumbnail {
+        &:first-child {
+            border-bottom: 4px solid #fff;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .col-2 {
+        border-right: 4px solid #fff;
+
+        @include mobile {
+            border: 0;
+        }
+    }
+
+    .adult-detail,
+    .student-detail {
+        position: relative;
+    }
+
+    .thumbnail-desc {
+        background: #1e3a76;
+        border: 1px solid #000;
+        position: absolute;
+        font-size: 36px;
+        line-height: 39px;
+        color: #fff;
+        width: 200px;
+        text-align: center;
+        font-weight: 300;
+        padding: 11px 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-transform: uppercase;
+    }
+}
+
+.travel--heading {
+    text-align: center;
+
+    .title {
+        font-size: 48px;
+        line-height: 48px;
+        color: #ffffff;
+        display: block;
+        background: rgba(30, 58, 118, 0.7);
+        padding: 17px 0;
+        font-family: "Dosis", sans-serif;
+        font-weight: bold;
+    }
+}
+
+.adult-travel {
+    display: flex;
+    flex-wrap: wrap;
+
+    .travel-thumbnail {
+        position: relative;
+
+        .detail {
+            background: #1e3a76;
+            width: 260px;
+            padding: 10px 15px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            a {
+                display: block;
+                border: 0;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            strong {
+                display: block;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: $body-secondary-font;
+
+            }
+
+            span {
+                display: block;
+                color: #fff;
+            }
+        }
+
+        a {
+            display: block;
+            border-right: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.student-travel {
+    padding: 20px;
+    text-align: center;
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        color: #1e3a76;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 24px;
+        color: #1e3a76;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.trip-detail {
+    padding: 0 30px;
+
+    .main-heading {
+        padding: 6px;
+        font-size: 18px;
+        line-height: 1;
+        color: #ffffff;
+        background: #1e3a76;
+        font-family: $body-secondary-font;
+    }
+
+    .subheading {
+        padding: 6px;
+        font-size: 18px;
+        line-height: 1;
+        color: #1e3a76;
+        background: rgba(91, 109, 158, 0.8);
+        font-family: $body-secondary-font;
+    }
+}
+
+.day-details,
+.day-hotel-details {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.trip-leader {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .leader-avatar {
+        text-align: center;
+        width: 15%;
+        margin-right: 20px;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-size: 18px;
+            line-height: 1;
+            color: #1e3a76;
+            font-family: $body-secondary-font;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            padding: 0 15px;
+        }
+    }
+
+    .leader-detail {
+        width: 80%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #1e3a76;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.airfare-detail {
+    .content {
+        font-size: 14px;
+        line-height: 24px;
+        color: #1e3a76;
+        margin-bottom: 10px;
+        padding: 20px 0;
+        max-width: 880px;
+
+        ul {
+            list-style-position: inside;
+            margin-top: 10px;
+
+            li {
+                font-size: 14px;
+                line-height: 24px;
+                color: #1e3a76;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &.term-conditions {
+        .content {
+            max-width: 100%;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #1e3a76;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.inclusions {
+    .inclusions-content {
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #1e3a76;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-position: inside;
+
+        li {
+            font-size: 14px;
+            line-height: 1;
+            color: #1e3a76;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.spot-detail {
+    display: flex;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+
+    .spot-name {
+        font-size: 48px;
+        line-height: 1;
+        color: #1e3a76;
+        font-weight: bold;
+        font-family: $body-secondary-font;
+        margin-bottom: 10px;
+
+        @include mobile {
+            font-size: 34px;
+        }
+    }
+
+    .spot-date {
+        font-size: 24px;
+        line-height: 1;
+        color: #1e3a76;
+        font-weight: bold;
+        font-family: $body-secondary-font;
+        margin-bottom: 5px;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    .spot-address {
+        font-size: 24px;
+        line-height: 1;
+        color: #1e3a76;
+        font-weight: bold;
+        font-family: $body-secondary-font;
+        margin-bottom: 15px;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    .spot-content {
+        font-size: 14px;
+        line-height: 18px;
+        color: #1e3a76;
+    }
+}
+
+.reserve-spot {
+    text-align: center;
+
+    strong {
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: $body-secondary-font;
+        width: 130px;
+        height: 130px;
+        background: #1e3a76;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px auto;
+        font-weight: bold;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: 18px;
+            color: #1e3a76;
+            font-family: $body-secondary-font;
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+
+.itinerary-content {
+    display: flex;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+
+    .title {
+        font-size: 24px;
+        line-height: 1;
+        color: #1e3a76;
+        font-family: $body-secondary-font;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .days {
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+
+        @include mobile {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 4px 0 0;
+
+            &.active {
+                a {
+                    background: #7c8aa9;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 12px;
+                line-height: 48px;
+                background: #1e3a76;
+                color: #fff;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                line-height: 25px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .subheading {
+        margin: 15px 0;
+        font-size: 18px;
+        line-height: 1;
+        color: #1e3a76;
+        font-family: $body-secondary-font;
+        font-weight: 400;
+    }
+
+    .thumbnail {
+        margin: 15px 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #1e3a76;
+        line-height: 18px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .download-pdf {
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        a {
+            display: block;
+            font-size: 14px;
+            line-height: 1;
+            color: #1e3a76;
+            font-family: $body-secondary-font;
+            margin-top: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.hotel-detail {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        +.row {
+            margin-top: 50px;
+        }
+    }
+
+    .title {
+        margin: 15px 0;
+        font-size: 18px;
+        line-height: 1;
+        color: #1e3a76;
+        font-family: "Dosis", sans-serif;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 14px;
+        color: #1e3a76;
+        font-weight: 400;
+        margin-bottom: 15px;
+        max-width: 300px;
+        padding-left: 10px;
+
+        a {
+            font-size: 14px;
+            color: #1e3a76;
+            font-family: $body-secondary-font;
+            font-weight: 400;
+            word-break: break-all;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .other-detail {
+        @include mobile {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                text-align: center;
+                list-style: none;
+                margin-bottom: 20px;
+                width: 50%;
+
+                img {
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    color: #1e3a76;
+                    text-decoration: none;
+                    max-width: 150px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

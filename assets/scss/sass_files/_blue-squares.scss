@@ -1,0 +1,122 @@
+.boxes {
+    text-align: center;
+    background: #fff;
+    padding: 35px 0;
+    &.pull-up {
+        position: relative;
+        background: transparent;
+        margin-top: -135px;
+        z-index: 99;
+        @include mobile {
+           margin-top: 0;
+        }
+    }
+
+    + .quotes-wrapper {
+        padding-top: 0;
+    }
+
+    ul {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        font-size: 0;
+        max-width: 80%;
+        & + .quotes-wrapper {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        li {
+            display: inline-block;
+            background: rgba(30, 58, 118, .7);
+            padding:30px 3px 20px;
+            height: 200px;
+            width: 200px;
+            margin: 0 10px 0 0;
+            @include mobile {
+                margin: 0 0 15px 0;
+                background: rgba(30, 58, 118, 1);
+                display: block;
+                width: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                font-size: 48px;
+                color: #ffffff;
+                display: block;
+                line-height: 1;
+                margin-bottom: 50px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            p {
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 30px;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+        }
+    }
+    &__description {
+        margin-top: 35px;
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 15px;
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+        .date {
+            color: #1e3a76;
+            display: block;
+            margin: 0;
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 400;
+            @include tablet {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.quotes-wrapper {
+    text-align: center;
+    padding:  45px 15px;
+    @include mobile {
+        padding:  20px 15px;
+    }
+    p {
+        font-size: 48px;
+        line-height: 60px;
+        color: #000000;
+        font-weight: 300;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0;
+        @include mobile {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    .author {
+        font-size: 24px;
+        line-height: 30px;
+        color: #1e3a76;
+        font-weight: 300;
+        margin-top: 25px;
+        display: block;
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+}

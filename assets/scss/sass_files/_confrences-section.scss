@@ -1,0 +1,135 @@
+.conferences-wrapper {
+    .heading {
+        text-align: center;
+        border-bottom: 4px solid #fff;
+        .title {
+            font-size: 48px;
+            line-height: 48px;
+            color: #ffffff;
+            display: block;
+            background: rgba(30, 58, 118, .7);
+            padding: 17px 0;
+            font-family: $body-secondary-font;
+            font-weight: bold;
+        }
+    }
+    .conferences-thumbnail {
+        a {
+            display: block;
+            border-right: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            @include mobile {
+                border-right: 0;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .conferences-detail {
+        display: flex;
+        align-items: center;
+        @include mobile {
+            flex-direction: column;
+        }
+        .previous-conference {
+            padding: 20px 40px;
+            text-align: center;
+            @include mobile {
+                padding: 20px 15px;
+            }
+            .bold {
+                font-size: 18px;
+                line-height: 30px;
+                color: #1e3a76;
+                font-weight: bold;
+                display: block;
+                text-transform: uppercase;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: block;
+                    a {
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #1e3a76;
+                        display: block;
+                        text-decoration: none;
+                        font-weight: 300;
+                        @include mobile {
+                            font-size: 14px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            font-weight: 600;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+        .left-col {
+            width: 42%;
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .right-col {
+            width: 58%;
+            @include mobile {
+                width: 100%;
+            }
+            .slider {
+                position: relative;
+                img {
+                    width: 100%;
+                    outline: none;
+                }
+                .slick-prev {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 9;
+                    width: 52px;
+                    height: 102px;
+                    background: url(../images/back-btn.png) center center no-repeat;
+                    border: 0;
+                    font-size: 0;
+                    outline: none;
+                    cursor: pointer;
+                }
+                .slick-next {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 9;
+                    width: 52px;
+                    height: 102px;
+                    background: url(../images/next-btn.png) center center no-repeat;
+                    border: 0;
+                    font-size: 0;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.slider-thumb {
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    div[class*=conference] {
+        &:not(.slick-slide) {
+            display: none;
+        }
+        &.slick-slide {
+            display: block;
+        }
+    }
+}
